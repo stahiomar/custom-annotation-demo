@@ -5,7 +5,7 @@ public class Cat {
     private int age;
     private String color;
 
-    @RunImmediately
+    @RunImmediately //put this annotation here to invoke this method immediately
     public void meow(){
         System.out.println("MEOW");
     }

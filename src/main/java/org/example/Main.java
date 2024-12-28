@@ -7,7 +7,7 @@ public class Main {
         //Create object of cat class
         Cat myCat = new Cat();
 
-        //loop through methods inside Cat class and invoke the class annotation with @RunImmediately
+        //loop through methods inside muCat object and invoke the method annotated with @RunImmediately
         for (Method method : myCat.getClass().getDeclaredMethods()) {
             if (method.isAnnotationPresent(RunImmediately.class)) {
                 method.invoke(myCat);
